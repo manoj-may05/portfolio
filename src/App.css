@@ -948,6 +948,7 @@ section {
 
   .hero-topline {
     margin-bottom: 60px;
+    justify-content: space-between;
   }
 
   .hero-layout,
