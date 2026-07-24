@@ -1111,6 +1111,17 @@ section {
     font-size: 3rem;
   }
 
+  .hero-topline {
+  margin-bottom: 40px;
+  font-size: 10px;
+  }
+
+.hero-topline > div {
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   .hero-description {
     font-size: 15px;
   }

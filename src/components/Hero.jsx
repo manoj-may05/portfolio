@@ -9,7 +9,7 @@ export default function Hero({ scrollTo }) {
 
         {/* Topline */}
         <div className="hero-topline">
-          <div><span>01 </span>— Introduction</div>
+          <div><span>01-</span>Introduction</div>
 
           <div className="availability">
             <span className="availability-dot" />
