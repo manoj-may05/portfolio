@@ -947,9 +947,11 @@ section {
   /* HERO */
 
   .hero-topline {
-    margin-bottom: 60px;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
 
   .hero-layout,
   .about-layout,
