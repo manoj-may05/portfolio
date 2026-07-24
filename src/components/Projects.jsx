@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { PROJECTS } from "../data/data";
-import "../App.css"
+import "../App.css";
 
 export default function Projects() {
   return (

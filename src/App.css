@@ -1,6 +1,4 @@
-/* =========================
-   DESIGN SYSTEM
-========================= */
+/* DESIGN SYSTEM */
 
 :root {
   --background: #0b0b0c;
@@ -17,9 +15,7 @@
 }
 
 
-/* =========================
-   GLOBAL
-========================= */
+/* GLOBAL */
 
 body {
   background: var(--background);
@@ -28,25 +24,20 @@ body {
 
 section {
   padding: 150px 24px;
-
   border-bottom: 1px solid var(--border);
 }
 
 .section-container {
   width: 100%;
   max-width: 1200px;
-
   margin: 0 auto;
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 .portfolio-nav {
   position: fixed;
-
   top: 0;
   left: 0;
   right: 0;
@@ -54,7 +45,6 @@ section {
   z-index: 1000;
 
   background: rgba(11, 11, 12, 0.9);
-
   border-bottom: 1px solid var(--border);
 
   backdrop-filter: blur(14px);
@@ -75,7 +65,6 @@ section {
 .nav-links {
   display: flex;
   align-items: center;
-
   gap: 34px;
 }
 
@@ -85,16 +74,13 @@ section {
   padding: 8px 0;
 
   background: none;
-
   border: none;
 
   color: var(--muted);
 
   font-family: "JetBrains Mono", monospace;
   font-size: 11px;
-
   letter-spacing: 1px;
-
   text-transform: uppercase;
 
   cursor: pointer;
@@ -106,7 +92,6 @@ section {
   content: "";
 
   position: absolute;
-
   left: 0;
   bottom: 0;
 
@@ -139,9 +124,7 @@ section {
 }
 
 
-/* =========================
-   HAMBURGER
-========================= */
+/* HAMBURGER */
 
 .hamburger {
   display: none;
@@ -151,11 +134,9 @@ section {
 
   width: 42px;
   height: 42px;
-
   padding: 0;
 
   background: transparent;
-
   border: 1px solid var(--border);
 
   color: var(--text);
@@ -169,28 +150,22 @@ section {
 
 .hamburger:hover {
   border-color: var(--accent);
-
   color: var(--accent);
 }
 
 
-/* =========================
-   MOBILE MENU DEFAULT
-========================= */
+/* MOBILE MENU DEFAULT */
 
 .mobile-menu {
   display: none;
 }
 
 
-/* =========================
-   SECTION LABEL
-========================= */
+/* SECTION LABEL */
 
 .section-label {
   display: flex;
   align-items: center;
-
   gap: 16px;
 
   margin-bottom: 80px;
@@ -199,9 +174,7 @@ section {
 
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
-
   letter-spacing: 1px;
-
   text-transform: uppercase;
 }
 
@@ -210,9 +183,7 @@ section {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero-section {
   padding-top: 150px;
@@ -229,16 +200,16 @@ section {
 
   font-family: "JetBrains Mono", monospace;
   font-size: 11px;
-
   letter-spacing: 1px;
-
   text-transform: uppercase;
 }
 
+.hero-topline span {
+  color: var(--accent);
+}
 .availability {
   display: flex;
   align-items: center;
-
   gap: 8px;
 }
 
@@ -268,7 +239,6 @@ section {
 
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
-
   letter-spacing: 2px;
 }
 
@@ -279,13 +249,11 @@ section {
   font-weight: 500;
 
   line-height: 1.05;
-
   letter-spacing: -3px;
 }
 
 .hero-content h1 em {
   color: var(--accent);
-
   font-style: normal;
 }
 
@@ -303,14 +271,14 @@ section {
   color: var(--muted-light);
 
   font-size: 17px;
-
   line-height: 1.8;
+
+  text-align: justify;
 }
 
 .hero-actions {
   display: flex;
   align-items: center;
-
   gap: 25px;
 
   margin-top: 40px;
@@ -319,19 +287,20 @@ section {
 .hero-primary-button {
   display: flex;
   align-items: center;
-
   gap: 10px;
 
   padding: 14px 20px;
 
   background: var(--accent);
-
   color: #111;
 
+  border: none;
   border-radius: 3px;
 
   font-size: 14px;
   font-weight: 600;
+
+  cursor: pointer;
 
   transition: all 0.3s ease;
 }
@@ -345,12 +314,18 @@ section {
 .hero-scroll-button {
   display: flex;
   align-items: center;
-
   gap: 8px;
+
+  padding: 14px 20px;
+
+  background: transparent;
+  border: none;
 
   color: var(--muted);
 
   font-size: 13px;
+
+  cursor: pointer;
 
   transition: color 0.3s ease;
 }
@@ -360,9 +335,7 @@ section {
 }
 
 
-/* =========================
-   HERO IMAGE
-========================= */
+/* HERO IMAGE */
 
 .hero-visual {
   display: flex;
@@ -390,7 +363,6 @@ section {
   height: 100%;
 
   border: 1px solid rgba(214, 163, 84, 0.45);
-
   border-radius: 50%;
 
   transform: rotate(12deg);
@@ -407,7 +379,6 @@ section {
   height: 92%;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
-
   border-radius: 50%;
 
   transform: rotate(-12deg);
@@ -425,7 +396,6 @@ section {
 
 .image-frame img {
   position: relative;
-
   z-index: 2;
 
   width: 320px;
@@ -434,7 +404,6 @@ section {
   object-fit: cover;
 
   border: 6px solid var(--background);
-
   border-radius: 50%;
 
   outline: 1px solid rgba(214, 163, 84, 0.5);
@@ -452,22 +421,7 @@ section {
 
 .image-frame:hover img {
   transform: scale(1.04);
-
   filter: grayscale(0%);
-}
-
-.image-number {
-  position: absolute;
-
-  top: 10px;
-  left: 30px;
-
-  z-index: 3;
-
-  color: var(--accent);
-
-  font-family: "JetBrains Mono", monospace;
-  font-size: 11px;
 }
 
 .image-caption {
@@ -484,7 +438,6 @@ section {
 
   font-family: "JetBrains Mono", monospace;
   font-size: 10px;
-
   text-transform: uppercase;
 }
 
@@ -504,9 +457,7 @@ section {
 }
 
 
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about-layout {
   display: grid;
@@ -526,7 +477,6 @@ section {
   font-weight: 500;
 
   line-height: 1.1;
-
   letter-spacing: -2px;
 }
 
@@ -541,8 +491,9 @@ section {
   color: var(--muted-light);
 
   font-size: 17px;
-
   line-height: 1.9;
+
+  text-align: justify;
 }
 
 .about-text p + p {
@@ -551,7 +502,6 @@ section {
 
 .about-facts {
   display: flex;
-
   gap: 50px;
 
   margin-top: 50px;
@@ -563,7 +513,6 @@ section {
 .about-facts div {
   display: flex;
   flex-direction: column;
-
   gap: 6px;
 }
 
@@ -576,14 +525,11 @@ section {
 
 .about-facts span {
   color: var(--muted);
-
   font-size: 11px;
 }
 
 
-/* =========================
-   SKILLS
-========================= */
+/* SKILLS */
 
 .skills-heading {
   display: flex;
@@ -591,7 +537,6 @@ section {
   justify-content: space-between;
 
   gap: 40px;
-
   margin-bottom: 80px;
 }
 
@@ -599,7 +544,6 @@ section {
   max-width: 350px;
 
   color: var(--muted);
-
   line-height: 1.8;
 }
 
@@ -636,7 +580,6 @@ section {
 .skill-items {
   display: flex;
   flex-wrap: wrap;
-
   gap: 10px;
 }
 
@@ -655,14 +598,11 @@ section {
 
 .skill-items span:hover {
   border-color: var(--accent);
-
   color: var(--accent);
 }
 
 
-/* =========================
-   PROJECTS
-========================= */
+/* PROJECTS */
 
 .projects-heading {
   display: flex;
@@ -670,7 +610,6 @@ section {
   justify-content: space-between;
 
   gap: 50px;
-
   margin-bottom: 80px;
 }
 
@@ -678,7 +617,6 @@ section {
   max-width: 400px;
 
   color: var(--muted);
-
   line-height: 1.8;
 }
 
@@ -740,7 +678,6 @@ section {
 
   font-family: "JetBrains Mono", monospace;
   font-size: 10px;
-
   text-transform: uppercase;
 }
 
@@ -755,12 +692,12 @@ section {
   color: var(--muted);
 
   line-height: 1.8;
+  text-align: justify;
 }
 
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-
   gap: 8px;
 
   margin-top: 24px;
@@ -784,7 +721,6 @@ section {
 .project-link {
   display: flex;
   align-items: center;
-
   gap: 8px;
 
   width: fit-content;
@@ -806,9 +742,7 @@ section {
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact-layout {
   display: grid;
@@ -824,7 +758,6 @@ section {
   margin-top: 30px;
 
   color: var(--muted);
-
   line-height: 1.8;
 }
 
@@ -853,14 +786,11 @@ section {
 
 .contact-item:hover {
   padding-left: 10px;
-
   color: var(--accent);
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 .footer {
   padding: 30px 24px;
@@ -873,7 +803,6 @@ section {
 
   font-family: "JetBrains Mono", monospace;
   font-size: 11px;
-
   letter-spacing: 0.5px;
 }
 
@@ -882,9 +811,7 @@ section {
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media (max-width: 992px) {
 
@@ -905,12 +832,11 @@ section {
   .skill-row {
     grid-template-columns: 60px 200px 1fr;
   }
+
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -927,11 +853,9 @@ section {
 
   .nav-inner {
     position: relative;
-
     z-index: 1001;
 
     height: 68px;
-
     padding: 0 20px;
   }
 
@@ -958,22 +882,17 @@ section {
     display: flex;
     flex-direction: column;
 
-    gap: 0;
-
     padding: 10px 20px 25px;
 
     background: rgba(11, 11, 12, 0.98);
 
     border-top: 1px solid var(--border);
-
     border-bottom: 1px solid var(--border);
 
     transform: translateY(-10px);
 
     opacity: 0;
-
     visibility: hidden;
-
     pointer-events: none;
 
     transition:
@@ -986,9 +905,7 @@ section {
     transform: translateY(0);
 
     opacity: 1;
-
     visibility: visible;
-
     pointer-events: auto;
   }
 
@@ -1002,7 +919,6 @@ section {
     color: var(--muted);
 
     text-align: left;
-
     font-size: 11px;
   }
 
@@ -1012,7 +928,6 @@ section {
 
   .mobile-menu .nav-button:hover {
     padding-left: 8px;
-
     color: var(--accent);
   }
 
@@ -1039,26 +954,22 @@ section {
   .about-layout,
   .contact-layout {
     grid-template-columns: 1fr;
-
     gap: 60px;
   }
 
   .hero-content h1 {
     font-size: 3.6rem;
-
     letter-spacing: -2px;
   }
 
   .hero-actions {
-    flex-direction: column;
-
+    flex-direction: row;
     align-items: flex-start;
   }
 
   .hero-bottom {
     flex-wrap: wrap;
-
-    gap: 18px;
+    gap: 10px;
   }
 
 
@@ -1076,7 +987,6 @@ section {
 
   .image-caption {
     bottom: -38px;
-
     font-size: 9px;
   }
 
@@ -1086,7 +996,6 @@ section {
   .skills-heading,
   .projects-heading {
     flex-direction: column;
-
     align-items: flex-start;
   }
 
@@ -1107,7 +1016,6 @@ section {
 
   .project-item {
     grid-template-columns: 1fr;
-
     gap: 20px;
   }
 
@@ -1138,15 +1046,51 @@ section {
 
   .footer {
     padding: 25px 20px;
-
     font-size: 10px;
   }
+
+
+  /* MOBILE HERO ORDER */
+
+  .hero-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    display: contents;
+  }
+
+  .hero-kicker {
+    order: 1;
+  }
+
+  .hero-content h1 {
+    order: 2;
+  }
+
+  .hero-visual {
+    order: 3;
+
+    margin: 20px 0 40px;
+  }
+
+  .hero-description {
+    order: 4;
+  }
+
+  .hero-actions {
+    order: 5;
+  }
+
+  .hero-bottom {
+    order: 6;
+  }
+
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* SMALL MOBILE */
 
 @media (max-width: 480px) {
 
@@ -1192,4 +1136,5 @@ section {
   .project-details h3 {
     font-size: 27px;
   }
+
 }

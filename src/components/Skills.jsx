@@ -1,5 +1,5 @@
 import { SKILLS } from "../data/data";
-import "../App.css"
+import "../App.css";
 
 export default function Skills() {
   return (

@@ -1,23 +1,26 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import selfImage from "../assets/self.png";
-import "../App.css"
+import "../App.css";
 
 export default function Hero({ scrollTo }) {
   return (
     <section id="hero" className="hero-section">
       <div className="section-container">
 
+        {/* Topline */}
         <div className="hero-topline">
-          <span>01 — Introduction</span>
+          <div><span>01 </span>— Introduction</div>
 
-          <span className="availability">
+          <div className="availability">
             <span className="availability-dot" />
             Available for opportunities
-          </span>
+          </div>
         </div>
 
+        {/* Main Hero Layout */}
         <div className="hero-layout">
 
+          {/* Left Content */}
           <div className="hero-content">
 
             <p className="hero-kicker">
@@ -38,33 +41,27 @@ export default function Hero({ scrollTo }) {
             </h1>
 
             <p className="hero-description">
-              I’m Manoj, an aspiring Full Stack Developer
-              focused on building practical, scalable, and
-              user-friendly web applications with React,
-              Python, FastAPI, and PostgreSQL.
+              I'm Manoj, an aspiring Full Stack Developer focused on
+              building practical, scalable, and user-friendly web
+              applications with React, Python, FastAPI, and PostgreSQL.
             </p>
 
+            {/* Actions */}
             <div className="hero-actions">
 
               <button
                 className="hero-primary-button"
-                onClick={() =>
-                  scrollTo("projects")
-                }
+                onClick={() => scrollTo("projects")}
               >
                 Explore my work
-
                 <ArrowUpRight size={18} />
               </button>
 
               <button
                 className="hero-scroll-button"
-                onClick={() =>
-                  scrollTo("about")
-                }
+                onClick={() => scrollTo("about")}
               >
                 <ArrowDown size={18} />
-
                 Scroll to explore
               </button>
 
@@ -72,17 +69,14 @@ export default function Hero({ scrollTo }) {
 
           </div>
 
+          {/* Right Image */}
           <div className="hero-visual">
 
             <div className="image-frame">
 
-              <div className="image-number">
-                01
-              </div>
-
               <img
                 src={selfImage}
-                alt="Manoj"
+                alt="Portrait of Manoj, Full Stack Developer"
               />
 
               <div className="image-caption">
@@ -96,28 +90,13 @@ export default function Hero({ scrollTo }) {
 
         </div>
 
+        {/* Tech Stack */}
         <div className="hero-bottom">
-
-          <span>
-            React.js
-          </span>
-
-          <span>
-            Python
-          </span>
-
-          <span>
-            FastAPI
-          </span>
-
-          <span>
-            PostgreSQL
-          </span>
-
-          <span>
-            JavaScript
-          </span>
-
+          <span>React.js</span>
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>JavaScript</span>
         </div>
 
       </div>

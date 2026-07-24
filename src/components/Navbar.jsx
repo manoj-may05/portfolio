@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import "../App.css"
+import "../App.css";
 
 const SECTION_MAP = {
   Home: "hero",

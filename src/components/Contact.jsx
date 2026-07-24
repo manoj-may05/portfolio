@@ -8,7 +8,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-import "../App.css"
+import "../App.css";
 
 export default function Contact() {
   return (
