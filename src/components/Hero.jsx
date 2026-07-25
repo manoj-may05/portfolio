@@ -13,7 +13,7 @@ export default function Hero({ scrollTo }) {
 
           <div className="availability">
             <span className="availability-dot" />
-            Available for opportunities
+            Seeking New Opportunities
           </div>
         </div>
 
